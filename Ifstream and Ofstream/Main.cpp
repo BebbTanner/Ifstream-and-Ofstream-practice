@@ -14,5 +14,15 @@ int main() {
 	//Declaring a variable of type ofstream and calling it outputTest.
 	ofstream outputTest;
 
+	outputTest.open("testfile.txt");
+
+	if (outputTest.is_open()) {
+		outputTest << 100;
+		outputTest.close();
+	}
+	else {
+		cout << "Error, could not open/create file." << endl;
+	}
+
 	return 0;
 }
