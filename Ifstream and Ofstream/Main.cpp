@@ -32,8 +32,12 @@ int main() {
 
 	cout << "Please enter your first name, then hit the return key: " << endl;
 	cin >> firstName;
-	cout << "Please enter your last name, then hit the return key: " << end;
+	cout << "Please enter your last name, then hit the return key: " << endl;
 	cin >> lastName;
+
+	ofstream userInfo("user.txt");
+	userInfo << firstName << endl;
+	userInfo << lastName << endl;
 
 	return 0;
 }
