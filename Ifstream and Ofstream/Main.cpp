@@ -30,14 +30,29 @@ int main() {
 	
 	string firstName, lastName;
 
+	/*This is going to give a user a promot that will ask them to fill in their information.
+	Then that information will get stored in the declared variables.*/
 	cout << "Please enter your first name, then hit the return key: " << endl;
 	cin >> firstName;
 	cout << "Please enter your last name, then hit the return key: " << endl;
 	cin >> lastName;
 
+	/*This is going to declare the file that will store the user information.
+	The information is stored using the variables from above.*/
 	ofstream userInfo("user.txt");
 	userInfo << firstName << endl;
 	userInfo << lastName << endl;
+
+	/*Declare a variable of type ifstream called getuserinfo.
+	Declared a variable of type string called mytext.*/
+	ifstream getUserInfo("user.txt");
+	string myText;
+
+	/*While loop that will use the get line command to read through
+	each line in the text file and then print it out to the screen.*/
+	while (getline(getUserInfo, myText)) {
+		cout << myText << endl;
+	}
 
 	return 0;
 }
