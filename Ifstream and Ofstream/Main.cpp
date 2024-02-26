@@ -10,22 +10,23 @@ It seems like ofstream and ifstream are used as data types.
 using namespace std;
 
 int main() {
+	/*This will open the file that is listed in the parameters.*/
+	//ofstream outputTest("testfile.txt");
 
-	//Declaring a variable of type ofstream and calling it outputTest.
-	ofstream outputTest;
-	ifstream inputTest;
+	/*This will write to the file.*/
+	//outputTest << "This should write to the txt file.";
 
-	outputTest.open("testfile.txt");
+	/*This closes the file that is currently opened.*/
+	//outputTest.close();
 
-	//if (outputTest.is_open()) {
-	//	outputTest << 100;
-	//	outputTest.close();
+	/*Delcared the variables myText and inputTest.*/
+	//string myText;
+	//ifstream inputTest("testfile.txt");
+
+	/*This is a while loop that should read each line and then print it out to the screen.*/
+	//while (getline(inputTest, myText)) {
+	//	cout << myText;
 	//}
-	//else {
-	//	cout << "Error, could not open/create file." << endl;
-	//}
-
-	outputTest.close();
 
 	return 0;
 }
