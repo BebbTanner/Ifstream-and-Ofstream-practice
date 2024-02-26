@@ -27,6 +27,13 @@ int main() {
 	//while (getline(inputTest, myText)) {
 	//	cout << myText;
 	//}
+	
+	string firstName, lastName;
+
+	cout << "Please enter your first name, then hit the return key: " << endl;
+	cin >> firstName;
+	cout << "Please enter your last name, then hit the return key: " << end;
+	cin >> lastName;
 
 	return 0;
 }
