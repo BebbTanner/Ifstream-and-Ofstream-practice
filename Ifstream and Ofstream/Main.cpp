@@ -1,7 +1,16 @@
 /*Practicing using the ifstream and the ofstream
 
 NOTES:
-It seems like ofstream and ifstream are used as data types.
+	It seems like ofstream and ifstream are used as data types.
+	Finally figured out how to allow the user to write the text to a txt file.
+
+TODO:
+	Allow the user to give a name to the outputfile
+	Get user's first name. - FINISHED
+	Get user's last name. - FINISHED
+	Get user's middle name.
+	Get user's birth month.
+	Print all of that information to the screen.
 */
 
 #include <iostream>
@@ -28,7 +37,7 @@ int main() {
 	//	cout << myText;
 	//}
 	
-	string firstName, lastName;
+	string firstName, lastName, birthMonth, middleName;
 
 	/*This is going to give a user a promot that will ask them to fill in their information.
 	Then that information will get stored in the declared variables.*/
