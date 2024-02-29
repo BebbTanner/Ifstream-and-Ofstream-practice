@@ -11,6 +11,7 @@ TODO:
 	Get user's middle name. - FINISHED
 	Get user's birth month. - FINISHED
 	Print all of that information to the screen. - FINISHED
+	Add a feature that deletes the file after the program has closed. 
 */
 
 #include <iostream>
