@@ -17,7 +17,10 @@ TODO:
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdio>
 using namespace std;
+
+void removeFile(string fileName);
 
 int main() {
 	
@@ -59,3 +62,4 @@ int main() {
 
 	return 0;
 }
+
