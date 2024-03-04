@@ -11,7 +11,7 @@ TODO:
 	Get user's middle name. - FINISHED
 	Get user's birth month. - FINISHED
 	Print all of that information to the screen. - FINISHED
-	Add a feature that deletes the file after the program has closed. 
+	Add a feature that deletes the file after the program has closed. - FINISHED
 */
 
 #include <iostream>
@@ -60,9 +60,16 @@ int main() {
 		cout << myText << endl;
 	}
 
+	deleteFile(fileName + ".txt");
+
 	return 0;
 }
 
 void deleteFile(const string& fileName) {
-
+	if (remove(fileName.c_str()) != 0) {
+		cout << "Failed to remove file." << endl;
+	}
+	else {
+		cout << "File removed successfully!" << endl;
+	}
 }
