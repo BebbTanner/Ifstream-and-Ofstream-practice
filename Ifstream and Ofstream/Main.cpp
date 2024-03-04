@@ -20,7 +20,7 @@ TODO:
 #include <cstdio>
 using namespace std;
 
-void removeFile(string fileName);
+void deleteFile(const string& fileName);
 
 int main() {
 	
@@ -63,3 +63,6 @@ int main() {
 	return 0;
 }
 
+void deleteFile(const string& fileName) {
+
+}
